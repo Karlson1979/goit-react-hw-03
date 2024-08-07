@@ -1,13 +1,16 @@
+import React from 'react'
 
-
-export const App = () => {
+const App = () => {
   return (
     <div>
   <h1>Phonebook</h1>
-  <ContactForm />
+  {/* <ContactForm />
   <SearchBox />
-  <ContactList />
+  <ContactList /> */}
 </div>
 
   )
 }
+
+
+export default App
