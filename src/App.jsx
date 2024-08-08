@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import SearchBox from "./components/SearchBox/SearchBox"
 import ContactList from "./components/contactList/ContactList"
 
 const App = () => {
@@ -8,11 +8,13 @@ const App = () => {
   {id: 'id-3', name: 'Eden Clements', number: '645-17-79'},
   {id: 'id-4', name: 'Annie Copeland', number: '227-91-26'},]
   const [contacts,setContacts]=useState(staticData)
+  const [search,setSearch]=useState('')
+  const searchUser=(event)=> {setSearch(event.target.value)}
   return (
     <div>
   <h1>Phonebook</h1>
   {/* <ContactForm /> */}
-  {/* <SearchBox /> */}
+  <SearchBox searchUser={searchUser} />
   <ContactList  
   contacts={contacts}/>
    
