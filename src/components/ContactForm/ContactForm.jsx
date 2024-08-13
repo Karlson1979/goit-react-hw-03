@@ -20,7 +20,7 @@ const ContactForm = ({addContact} ) => {
 
     addContact(contact)
     actions.resetForm();
-    deleteContact(contact)
+    
   };
 
   return (
