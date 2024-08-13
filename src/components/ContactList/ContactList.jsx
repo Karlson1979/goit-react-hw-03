@@ -1,4 +1,5 @@
-import Contact from "./Contact/Contact"
+import Contact from "../Contact/Contact"
+
 
  const ContactList = ({contacts,deleteContact}) => {
 
